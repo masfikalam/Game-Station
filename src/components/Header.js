@@ -1,5 +1,5 @@
 import { MdSettings } from "react-icons/md";
-import logo from "../resources/logo1.png";
+import logo from "../resources/logo.png";
 import "../styles/Header.css";
 
 const Header = () => {
