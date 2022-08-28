@@ -35,16 +35,20 @@ const Testimonials = () => {
         <RiQuestionAnswerFill className="icon" /> Testimonials
       </h2>
 
-      {testList.map((test) => (
-        <article key={test.username}>
-          <img src={test.photo} alt={test.username} />
+      <div className="test-boxes">
+        {testList.map((test) => (
+          <article key={test.username}>
+            <div className="test">
+              <img src={test.photo} alt={test.username} />
 
-          <div>
-            <h4>@{test.username}</h4>
-            <p>{test.text}</p>
-          </div>
-        </article>
-      ))}
+              <div>
+                <h4>@{test.username}</h4>
+                <p>{test.text}</p>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 };

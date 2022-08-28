@@ -2,7 +2,7 @@ import { BiGroup } from "react-icons/bi";
 import { HiHome } from "react-icons/hi";
 import "../styles/Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ groups }) => {
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
@@ -14,11 +14,19 @@ const Sidebar = () => {
           <HiHome className="icon" /> Home
         </li>
         <li>
-          <BiGroup className="icon" /> Groups
+          <BiGroup className="icon" /> Explore
         </li>
       </ul>
 
       <hr />
+
+      <ul>
+        {groups.map((group, id) => (
+          <li key={id}>
+            <HiHome className="icon" /> {group.title}
+          </li>
+        ))}
+      </ul>
     </aside>
   );
 };

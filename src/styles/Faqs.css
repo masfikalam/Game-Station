@@ -36,3 +36,13 @@
   border-radius: 10px;
   background-color: #2929294b;
 }
+
+@media (max-width: 600px) {
+  #faqs h2 {
+    padding-top: 0;
+  }
+
+  #faqs details {
+    font-size: 18px;
+  }
+}

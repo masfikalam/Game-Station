@@ -14,13 +14,22 @@
   margin: 0 3px -3px 0;
 }
 
+#testimonials .test-boxes {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+
 #testimonials article {
-  margin: 10px;
-  color: white;
+  padding: 15px;
+}
+
+#testimonials article div.test {
   padding: 15px 30px;
+  display: flex;
+  color: white;
   border-radius: 10px;
   align-items: center;
-  display: inline-flex;
   background-color: #010508;
 }
 
@@ -34,4 +43,19 @@
   height: 50px;
   margin-right: 20px;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  #testimonials h2 {
+    padding-top: 0;
+  }
+
+  #testimonials .test-boxes {
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+  }
+
+  #testimonials article {
+    padding: 10px;
+  }
 }
