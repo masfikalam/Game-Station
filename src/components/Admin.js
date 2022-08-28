@@ -8,7 +8,7 @@ const Admin = () => {
   return (
     <section id="admin">
       <h2>
-        <MdAdminPanelSettings class="target" /> Community Admin
+        <MdAdminPanelSettings className="target" /> Community Admin
       </h2>
 
       <article>

@@ -5,7 +5,7 @@ const Community = () => {
   return (
     <section id="community">
       <h2>
-        <BiTargetLock class="target" /> Community Goles
+        <BiTargetLock className="target" /> Community Goles
       </h2>
 
       <article>

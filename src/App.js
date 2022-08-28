@@ -4,6 +4,7 @@ import Container from "./components/Container";
 import Faqs from "./components/Faqs";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Community />
         <Admin />
+        <Testimonials />
         <Faqs />
       </Container>
     </>

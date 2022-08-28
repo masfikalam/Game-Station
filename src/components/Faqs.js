@@ -28,11 +28,11 @@ const Faqs = () => {
   return (
     <section id="faqs">
       <h2>
-        <FaQuestionCircle class="icon" /> Community FAQs
+        <FaQuestionCircle className="icon" /> Community FAQs
       </h2>
 
-      {faqlist.map((faq) => (
-        <details>
+      {faqlist.map((faq, id) => (
+        <details key={id}>
           <summary>{faq.question}</summary>
           <p>{faq.answer}</p>
         </details>
