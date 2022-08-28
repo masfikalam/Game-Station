@@ -1,9 +1,12 @@
+import { BiTargetLock } from "react-icons/bi";
 import "../styles/Community.css";
 
 const Community = () => {
   return (
     <section id="community">
-      <h2>Community Goles</h2>
+      <h2>
+        <BiTargetLock class="target" /> Community Goles
+      </h2>
 
       <article>
         <p>

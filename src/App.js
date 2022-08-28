@@ -1,3 +1,4 @@
+import Admin from "./components/Admin";
 import Community from "./components/Community";
 import Container from "./components/Container";
 import Header from "./components/Header";
@@ -11,6 +12,7 @@ function App() {
       <Container>
         <Hero />
         <Community />
+        <Admin />
       </Container>
     </>
   );
