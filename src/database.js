@@ -63,4 +63,54 @@ const grouplist = [
   },
 ];
 
-export { grouplist };
+const testList = [
+  {
+    username: "DragonSlayer04",
+    text: "Best community ever!",
+    photo:
+      "https://img.freepik.com/premium-vector/gamer-mascot-geek-boy-esports-logo-avatar-with-headphones-glasses-cartoon-character_8169-228.jpg",
+  },
+  {
+    username: "Mystique45",
+    text: "Love this platform. Thanks to everyone XOXO",
+    photo:
+      "https://i.pinimg.com/236x/86/08/c5/8608c5397759d85490fee0e75847b417.jpg",
+  },
+  {
+    username: "PinkPanther87",
+    text: "Found the best buddies here <3",
+    photo:
+      "https://cdn.dribbble.com/users/1146759/screenshots/16326268/_3.png?compress=1&resize=400x300",
+  },
+  {
+    username: "DarkMaster69",
+    text: "Great platform for mods :D",
+    photo:
+      "https://i.pinimg.com/236x/8d/02/ed/8d02edb5b00a2d11a398fefc56ac45e7.jpg",
+  },
+];
+
+const faqlist = [
+  {
+    question: "What is Game Station?",
+    answer:
+      "Game Station is a platform that connects gamers, allowing them to play their favorite games with partners worldwide. We are redefining the gaming community experience, providing gamers and newcomers alike a safe and place to interact",
+  },
+  {
+    question: "How do I sign up here?",
+    answer:
+      "Signing up to Game Station is easy and free! Just click login on the top of the page or download our APP from PlayStore",
+  },
+  {
+    question: "Can I have more than one account?",
+    answer:
+      "Game Station users are limited to a single account only. One account per person is in place to prevent competitive advantages in our platform.",
+  },
+  {
+    question: "What are the community guidelines?",
+    answer:
+      "https://www.facebook.com/fbgaminghome/creators/gaming-community-guidelines",
+  },
+];
+
+export { grouplist, faqlist, testList };

@@ -6,7 +6,7 @@ import Groups from "./components/Groups";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
-import { grouplist } from "./database";
+import { faqlist, grouplist, testList } from "./database";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
         <Community />
         <Groups grouplist={grouplist} />
         <Admin />
-        <Testimonials />
-        <Faqs />
+        <Testimonials testList={testList} />
+        <Faqs faqlist={faqlist} />
       </Container>
     </>
   );
