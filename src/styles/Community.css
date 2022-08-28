@@ -1,0 +1,48 @@
+#community {
+  margin: 50px auto;
+}
+
+#community h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#community article {
+  display: flex;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #01a1ff;
+  justify-content: space-between;
+}
+
+#community p {
+  width: 60%;
+  line-height: 150%;
+  text-align: justify;
+}
+
+#community .perks {
+  width: 40%;
+  padding-left: 50px;
+}
+
+#community li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  #community article {
+    font-size: 16px;
+    flex-direction: column;
+  }
+
+  #community p {
+    width: 100%;
+  }
+
+  #community .perks {
+    width: 100%;
+    padding-left: 0;
+  }
+}
