@@ -10,9 +10,9 @@ const Community = () => {
 
       <article>
         <p>
-          How does anybody find friends? In the traditional community, we search
-          through our pool of neighbours and professional colleagues, in order
-          to find people who share our values and interests. We exchange
+          <b>How does anybody find friends?</b> In the traditional community, we
+          search through our pool of neighbours and professional colleagues, in
+          order to find people who share our values and interests. We exchange
           information about one another, disclose and discuss our mutual
           interests. In a virtual community we can go directly to the place
           where are favourite subjects are being discussed, then get acquainted

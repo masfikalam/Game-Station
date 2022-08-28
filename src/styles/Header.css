@@ -1,12 +1,17 @@
 header {
   top: 0;
   z-index: 2;
+  position: sticky;
+  background-color: #010508;
+}
+
+header nav {
+  margin: auto;
   display: flex;
   color: white;
-  position: sticky;
+  max-width: 1400px;
   padding: 5px 30px;
   align-items: center;
-  background-color: #010508;
   justify-content: space-between;
   box-shadow: 0 5px 5px #0000005b;
 }
@@ -35,14 +40,15 @@ header button {
   background-color: #fdf000;
 }
 
-header button:active {
-  transform: scale(0.95);
-}
-
 header .settings {
   font-size: 30px;
   cursor: pointer;
   margin-left: 20px;
+}
+
+header button:active,
+header .settings:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 600px) {
