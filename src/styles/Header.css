@@ -33,6 +33,12 @@ header button {
   background-color: #ff3361;
 }
 
+header .settings {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
 @media (max-width: 600px) {
   header {
     padding: 5px 20px;
@@ -49,5 +55,10 @@ header button {
   header button {
     font-size: 12px;
     padding: 8px 10px;
+  }
+
+  header .settings {
+    font-size: 28px;
+    margin-left: 15px;
   }
 }
