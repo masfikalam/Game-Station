@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  color: white;
+  padding: 5px 30px;
+  align-items: center;
+  background-color: #03031b;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px #0000005b;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header img {
+  width: 70px;
+}
+
+header button {
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: #ff3361;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 5px 20px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  header button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
