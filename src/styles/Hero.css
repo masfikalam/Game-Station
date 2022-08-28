@@ -32,6 +32,10 @@
   background-color: #fdf000;
 }
 
+#hero button:active {
+  transform: scale(0.95);
+}
+
 @media (max-width: 600px) {
   #hero {
     margin: 30px auto;
