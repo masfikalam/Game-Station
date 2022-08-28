@@ -1,10 +1,10 @@
 import "../styles/Container.css";
 import Sidebar from "./Sidebar";
 
-const Container = ({ groups, children }) => {
+const Container = ({ groups, groupRef, children }) => {
   return (
     <div className="container">
-      <Sidebar groups={groups} />
+      <Sidebar groups={groups} groupRef={groupRef} />
       <div>{children}</div>
     </div>
   );

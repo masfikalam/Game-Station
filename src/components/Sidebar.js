@@ -3,9 +3,16 @@ import { GiGamepad } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import "../styles/Sidebar.css";
 
-const Sidebar = ({ groups }) => {
+const Sidebar = ({ groups, groupRef }) => {
   const scrollTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const scrollGroup = () => {
+    window.scrollTo({
+      top: groupRef.current.offsetTop - 80,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -14,7 +21,7 @@ const Sidebar = ({ groups }) => {
         <li onClick={scrollTop}>
           <HiHome className="icon" /> Home
         </li>
-        <li>
+        <li onClick={scrollGroup}>
           <BiGroup className="icon" /> Explore
         </li>
       </ul>

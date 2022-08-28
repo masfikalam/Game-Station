@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Admin from "./components/Admin";
 import Community from "./components/Community";
 import Container from "./components/Container";
@@ -10,14 +11,16 @@ import Testimonials from "./components/Testimonials";
 import { faqlist, grouplist, testList } from "./database";
 
 function App() {
+  const groupRef = useRef(null);
+
   return (
     <>
       <Header />
 
-      <Container groups={grouplist}>
+      <Container groups={grouplist} groupRef={groupRef}>
         <Hero />
         <Community />
-        <Groups grouplist={grouplist} />
+        <Groups grouplist={grouplist} groupRef={groupRef} />
         <Admin />
         <Testimonials testList={testList} />
         <Faqs faqlist={faqlist} />

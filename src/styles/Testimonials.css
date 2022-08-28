@@ -15,19 +15,20 @@
 }
 
 #testimonials .test-boxes {
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 #testimonials article {
+  flex: 1 0 45%;
   padding: 15px;
 }
 
 #testimonials article div.test {
-  padding: 15px 30px;
   display: flex;
   color: white;
+  padding: 15px 30px;
   border-radius: 10px;
   align-items: center;
   background-color: #010508;
@@ -48,11 +49,6 @@
 @media (max-width: 600px) {
   #testimonials h2 {
     padding-top: 0;
-  }
-
-  #testimonials .test-boxes {
-    grid-template-rows: 100%;
-    grid-template-columns: 100%;
   }
 
   #testimonials article {

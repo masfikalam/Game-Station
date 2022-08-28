@@ -1,10 +1,10 @@
 import { GiGamepad } from "react-icons/gi";
 import "../styles/Groups.css";
 
-const Groups = ({ grouplist }) => {
+const Groups = ({ grouplist, groupRef }) => {
   return (
     <section id="groups">
-      <h2>
+      <h2 ref={groupRef}>
         <GiGamepad className="icon" /> Explore Groups
       </h2>
 
@@ -13,7 +13,9 @@ const Groups = ({ grouplist }) => {
           <article key={id}>
             <div>
               <img src={group.thumb} alt={group.title} />
+
               <h4>{group.title}</h4>
+
               <button>Join Group</button>
             </div>
           </article>

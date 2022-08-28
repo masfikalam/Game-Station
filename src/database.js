@@ -54,12 +54,12 @@ const grouplist = [
   {
     title: "RD Redemption Tips",
     thumb:
-      "https://c4.wallpaperflare.com/wallpaper/66/41/250/cyberpunk-futuristic-computer-interfaces-wallpaper-preview.jpg",
+      "https://s1.gaming-cdn.com/images/products/5679/616x353/red-dead-redemption-2-pc-game-rockstar-cover.jpg?v=1647026658",
   },
   {
     title: "Game Cheatsheets",
     thumb:
-      "https://thumbs.dreamstime.com/b/close-up-computer-repair-service-maintenance-cleanup-dust-dirty-checkup-electronic-devices-close-up-computer-117236155.jpg",
+      "https://img.itch.zone/aW1hZ2UvMjgyMjk2LzEzNzM1NzkucG5n/original/ra4tci.png",
   },
 ];
 
@@ -71,8 +71,14 @@ const testList = [
       "https://img.freepik.com/premium-vector/gamer-mascot-geek-boy-esports-logo-avatar-with-headphones-glasses-cartoon-character_8169-228.jpg",
   },
   {
+    username: "DarkMaster69",
+    text: "Great platform for mods :D",
+    photo:
+      "https://i.pinimg.com/236x/8d/02/ed/8d02edb5b00a2d11a398fefc56ac45e7.jpg",
+  },
+  {
     username: "Mystique45",
-    text: "Love this platform. Thanks to everyone XOXO",
+    text: "Love this platform. Thanks everyone",
     photo:
       "https://i.pinimg.com/236x/86/08/c5/8608c5397759d85490fee0e75847b417.jpg",
   },
@@ -81,12 +87,6 @@ const testList = [
     text: "Found the best buddies here <3",
     photo:
       "https://cdn.dribbble.com/users/1146759/screenshots/16326268/_3.png?compress=1&resize=400x300",
-  },
-  {
-    username: "DarkMaster69",
-    text: "Great platform for mods :D",
-    photo:
-      "https://i.pinimg.com/236x/8d/02/ed/8d02edb5b00a2d11a398fefc56ac45e7.jpg",
   },
 ];
 

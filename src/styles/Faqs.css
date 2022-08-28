@@ -29,10 +29,10 @@
 }
 
 #faqs details p {
-  color: #b9b8b8;
-  font-size: 18px;
-  margin-bottom: 0;
   padding: 20px;
+  font-size: 18px;
+  color: #b9b8b8;
+  margin-bottom: 0;
   border-radius: 10px;
   background-color: #2929294b;
 }

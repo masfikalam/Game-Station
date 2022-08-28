@@ -47,12 +47,12 @@
 }
 
 #admin a {
-  margin-right: 20px;
   text-decoration: none;
 }
 
 #admin .youtube {
   color: #ff3859;
+  margin-right: 20px;
 }
 
 #admin .instagram {
@@ -79,8 +79,8 @@
   }
 
   #admin div {
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   #admin h4 {
