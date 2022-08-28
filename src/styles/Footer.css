@@ -1,0 +1,48 @@
+footer {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: #010508;
+}
+
+footer div {
+  margin: auto;
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  padding: 20px 40px 20px 40px;
+  justify-content: space-around;
+}
+
+footer img {
+  width: 200px;
+}
+
+footer article {
+  text-align: left;
+}
+
+footer h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: #fdf000;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  footer div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer article {
+    text-align: center;
+  }
+}

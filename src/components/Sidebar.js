@@ -1,4 +1,5 @@
 import { BiGroup } from "react-icons/bi";
+import { GiGamepad } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import "../styles/Sidebar.css";
 
@@ -23,7 +24,7 @@ const Sidebar = ({ groups }) => {
       <ul>
         {groups.map((group, id) => (
           <li key={id}>
-            <HiHome className="icon" /> {group.title}
+            <GiGamepad className="icon" /> {group.title}
           </li>
         ))}
       </ul>
