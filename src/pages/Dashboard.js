@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { dbContext } from "../App";
 import Admin from "../components/Dashboard/Admin";
 import Community from "../components/Dashboard/Community";
+import Faqs from "../components/Dashboard/Faqs";
 import Header from "../components/Dashboard/Header";
 import Hero from "../components/Dashboard/Hero";
 import "../styles/Dashboard.css";
@@ -37,6 +38,7 @@ const Dashboard = () => {
       <Hero database={database} setDatabase={setDatabase} />
       <Community database={database} setDatabase={setDatabase} />
       <Admin database={database} setDatabase={setDatabase} />
+      <Faqs database={database} setDatabase={setDatabase} />
     </section>
   );
 };

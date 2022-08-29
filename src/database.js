@@ -128,21 +128,25 @@ const testList = [
 
 const faqlist = [
   {
+    id: 1,
     question: "What is Game Station?",
     answer:
       "Game Station is a platform that connects gamers, allowing them to play their favorite games with partners worldwide. We are redefining the gaming community experience, providing gamers and newcomers alike a safe place to interact.",
   },
   {
+    id: 2,
     question: "How do I sign up here?",
     answer:
       "Signing up to Game Station is easy and free! Just click login on the top of the page or download our app from Play Store.",
   },
   {
+    id: 3,
     question: "Can I have more than one account?",
     answer:
       "Game Station users are limited to a single account only. One account per person is in place to prevent competitive advantages in our platform.",
   },
   {
+    id: 4,
     question: "What are the community guidelines?",
     answer:
       "Please read - https://www.facebook.com/fbgaminghome/creators/gaming-community-guidelines",

@@ -108,6 +108,37 @@
   margin: 15px 5px;
 }
 
+#dashboard .faqs .faq,
+#dashboard .faqs form {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 15px auto;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #fdf000;
+}
+
+#dashboard .faqs form {
+  padding: 20px 30px;
+}
+
+#dashboard .faqs .btns button {
+  margin: 10px 5px 0 5px;
+}
+
+#dashboard button.edit {
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 5px 4px 5px 7px;
+  border-radius: 0 0 0 10px;
+}
+
+#dashboard button.edit:active {
+  transform: none;
+}
+
 @media (max-width: 600px) {
   #dashboard #nav {
     padding: 5px 20px;
