@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { dbContext } from "../App";
+import Header from "../components/Dashboard/Header";
+import "../styles/Dashboard.css";
 
 const Dashboard = () => {
-  return <h1>This is Dashboard Page</h1>;
+  const [database, setDatabase] = useContext(dbContext);
+
+  return (
+    <section id="dashboard">
+      <h2>Welcome to Dashboard</h2>
+      <p>Edit the community landing page template from here</p>
+
+      <Header database={database} setDatabase={setDatabase} />
+    </section>
+  );
 };
 
 export default Dashboard;

@@ -1,31 +1,27 @@
-import { useRef } from "react";
-import Admin from "../components/Admin";
-import Community from "../components/Community";
-import Container from "../components/Container";
-import Faqs from "../components/Faqs";
-import Footer from "../components/Footer";
-import Groups from "../components/Groups";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Testimonials from "../components/Testimonials";
-import {
-  admin,
-  brand,
-  community,
-  faqlist,
-  grouplist,
-  testList,
-} from "../database";
+import { useContext, useRef } from "react";
+import { dbContext } from "../App";
+import Admin from "../components/Home/Admin";
+import Community from "../components/Home/Community";
+import Container from "../components/Home/Container";
+import Faqs from "../components/Home/Faqs";
+import Footer from "../components/Home/Footer";
+import Groups from "../components/Home/Groups";
+import Header from "../components/Home/Header";
+import Hero from "../components/Home/Hero";
+import Testimonials from "../components/Home/Testimonials";
 
 const Home = () => {
   const groupRef = useRef(null);
+  const [database] = useContext(dbContext);
+  const { admin, brand, hero, community, faqlist, grouplist, testList } =
+    database;
 
   return (
     <>
       <Header brand={brand} />
 
       <Container groups={grouplist} groupRef={groupRef}>
-        <Hero hero={brand} />
+        <Hero hero={hero} />
         <Community community={community} />
         <Groups grouplist={grouplist} groupRef={groupRef} />
         <Admin admin={admin} />

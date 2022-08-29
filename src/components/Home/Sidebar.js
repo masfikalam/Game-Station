@@ -1,7 +1,7 @@
 import { BiGroup } from "react-icons/bi";
 import { GiGamepad } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
-import "../styles/Sidebar.css";
+import "../../styles/Sidebar.css";
 
 const Sidebar = ({ groups, groupRef }) => {
   const scrollTop = () => {

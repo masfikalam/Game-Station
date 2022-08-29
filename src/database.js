@@ -5,6 +5,9 @@ import adminPhoto from "./resources/pewdiepie.png";
 const brand = {
   name: "Game Station",
   logo,
+};
+
+const hero = {
   banner,
   heroText:
     "A computer game, in this context, will mean something that one uses primarily as for a hobby, a diversion from real life, and is a medium through which one plays. The primary reason to have a community centered on games is so that its' members playing experience is enriched.",
@@ -146,4 +149,4 @@ const faqlist = [
   },
 ];
 
-export { brand, community, grouplist, admin, faqlist, testList };
+export { brand, hero, community, grouplist, admin, faqlist, testList };

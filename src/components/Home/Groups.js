@@ -1,5 +1,5 @@
 import { GiGamepad } from "react-icons/gi";
-import "../styles/Groups.css";
+import "../../styles/Groups.css";
 
 const Groups = ({ grouplist, groupRef }) => {
   return (

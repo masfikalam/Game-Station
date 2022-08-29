@@ -1,0 +1,70 @@
+#dashboard {
+  margin: 50px;
+  color: white;
+  text-align: center;
+}
+
+#dashboard div {
+  text-align: left;
+  max-width: 500px;
+  margin: 80px auto;
+}
+
+#dashboard form {
+  display: flex;
+  flex-direction: column;
+}
+
+#dashboard button {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #fdf000;
+}
+
+#dashboard button:active {
+  transform: scale(0.95);
+}
+
+#dashboard h2 {
+  font-size: 28px;
+  color: #fdf000;
+  text-align: center;
+}
+
+#dashboard p {
+  font-size: 20px;
+}
+
+#dashboard input {
+  border: none;
+  min-width: 250px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#dashboard .preview button {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  #dashboard {
+    margin: 50px 30px;
+  }
+
+  #dashboard h2 {
+    font-size: 22px;
+  }
+
+  #dashboard p {
+    font-size: 16px;
+    padding: 0px 50px;
+  }
+
+  #dashboard div {
+    margin: 40px auto;
+  }
+}

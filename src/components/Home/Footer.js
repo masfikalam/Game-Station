@@ -1,6 +1,6 @@
 import { FiEdit } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import "../styles/Footer.css";
+import "../../styles/Footer.css";
 
 const Footer = ({ brand }) => {
   const { logo, name } = brand;

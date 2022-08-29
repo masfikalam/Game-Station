@@ -1,4 +1,4 @@
-import "../styles/Container.css";
+import "../../styles/Container.css";
 import Sidebar from "./Sidebar";
 
 const Container = ({ groups, groupRef, children }) => {

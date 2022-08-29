@@ -1,5 +1,5 @@
 import { BiTargetLock } from "react-icons/bi";
-import "../styles/Community.css";
+import "../../styles/Community.css";
 
 const Community = ({ community }) => {
   const { goal, perks } = community;

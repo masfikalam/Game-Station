@@ -1,5 +1,5 @@
 import { BsPersonPlusFill } from "react-icons/bs";
-import "../styles/Hero.css";
+import "../../styles/Hero.css";
 
 const Hero = ({ hero }) => {
   const { name, banner, heroText } = hero;

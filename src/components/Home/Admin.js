@@ -1,7 +1,7 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 import { MdAdminPanelSettings } from "react-icons/md";
-import "../styles/Admin.css";
+import "../../styles/Admin.css";
 
 const Admin = ({ admin }) => {
   const { photo, username, bio, youtube, instagram } = admin;

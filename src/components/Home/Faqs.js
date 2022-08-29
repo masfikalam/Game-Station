@@ -1,5 +1,5 @@
 import { FaQuestionCircle } from "react-icons/fa";
-import "../styles/Faqs.css";
+import "../../styles/Faqs.css";
 
 const Faqs = ({ faqlist }) => {
   return (

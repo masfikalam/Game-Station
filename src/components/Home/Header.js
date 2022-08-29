@@ -1,5 +1,5 @@
 import { MdLogin } from "react-icons/md";
-import "../styles/Header.css";
+import "../../styles/Header.css";
 
 const Header = ({ brand }) => {
   const { name, logo } = brand;

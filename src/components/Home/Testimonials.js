@@ -1,5 +1,5 @@
 import { RiQuestionAnswerFill } from "react-icons/ri";
-import "../styles/Testimonials.css";
+import "../../styles/Testimonials.css";
 
 const Testimonials = ({ testList }) => {
   return (
