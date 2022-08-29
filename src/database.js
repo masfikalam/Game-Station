@@ -54,7 +54,7 @@ const grouplist = [
       "https://canyonechoes.org/wp-content/uploads/2022/01/YESSSSSSSSSSNO.webp",
   },
   {
-    title: "Elder Ring Fellows",
+    title: "Elden Ring Fellows",
     thumb:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jFqSYPUamfJ30AMLfGjVn61a35WbSmDucAXlwvv6uW-I46KQcy_muDDPHv9pGS1X4FU&usqp=CAU",
   },
