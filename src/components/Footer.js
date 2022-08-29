@@ -1,4 +1,5 @@
 import { FiEdit } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
 const Footer = ({ brand }) => {
@@ -10,9 +11,11 @@ const Footer = ({ brand }) => {
         <img src={logo} alt="Game Station" />
 
         <article>
-          <button>
-            Edit Page <FiEdit className="icon" />
-          </button>
+          <Link to="dashboard">
+            <button>
+              Edit Page <FiEdit className="icon" />
+            </button>
+          </Link>
           <p>
             Powered by :{" "}
             <a href="https://pensil.in" target="_blank">
