@@ -9,8 +9,8 @@ const Groups = ({ grouplist, groupRef }) => {
       </h2>
 
       <div className="group-boxes">
-        {grouplist.map((group, id) => (
-          <article key={id}>
+        {grouplist.map((group) => (
+          <article key={group.id}>
             <div>
               <img src={group.thumb} alt={group.title} />
 

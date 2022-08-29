@@ -1,4 +1,5 @@
 import React from "react";
+import { BsVectorPen } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
 const Testimonials = ({ database, setDatabase }) => {
@@ -25,15 +26,18 @@ const Testimonials = ({ database, setDatabase }) => {
       <h3>Provide Testimonial</h3>
 
       <form onSubmit={publish}>
-        <input type="text" name="username" placeholder="Username" />
+        <input type="text" name="username" placeholder="Username" required />
         <input type="text" name="photo" placeholder="Photo Link" />
         <textarea
           rows={5}
+          required
           type="text"
           name="text"
           placeholder="Your thoughts"
         ></textarea>
-        <button>Publish</button>
+        <button>
+          Publish <BsVectorPen className="icon" />
+        </button>
       </form>
     </article>
   );

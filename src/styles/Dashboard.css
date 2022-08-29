@@ -65,12 +65,6 @@
   text-align: center;
 }
 
-#dashboard p.info {
-  color: #fdf000;
-  font-size: 20px;
-  margin-top: 50px;
-}
-
 #dashboard .icon {
   font-size: 18px;
   margin: 0 2px -4px 2px;
@@ -110,13 +104,13 @@
 
 #dashboard .faqs .faq,
 #dashboard .faqs form {
-  max-width: 100%;
+  max-width: 500px;
   overflow: hidden;
   margin: 15px auto;
   padding: 10px 20px;
   position: relative;
   border-radius: 10px;
-  border: 2px solid #fdf000;
+  border: 2px solid white;
 }
 
 #dashboard .faqs form {
@@ -127,16 +121,52 @@
   margin: 10px 5px 0 5px;
 }
 
-#dashboard button.edit {
+#dashboard button.edit,
+#dashboard button.delt {
   top: 0;
   right: 0;
   position: absolute;
   padding: 5px 4px 5px 7px;
   border-radius: 0 0 0 10px;
+  background-color: white;
 }
 
-#dashboard button.edit:active {
+#dashboard button.edit:active,
+#dashboard button.delt:active {
   transform: none;
+}
+
+#dashboard .groups .group {
+  display: flex;
+  max-width: 520px;
+  overflow: hidden;
+  margin: 15px auto;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  border: 2px solid white;
+}
+
+#dashboard .groups .group img {
+  width: 100px;
+  height: 65px;
+}
+
+#dashboard .groups .group p {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+#dashboard .groups form {
+  max-width: 460px;
+  border-radius: 10px;
+  padding: 20px 30px 0 30px;
+  border: 2px solid white;
+}
+
+#dashboard button.add {
+  margin: auto;
+  display: block;
 }
 
 @media (max-width: 600px) {
@@ -155,11 +185,6 @@
 
   #dashboard h2 {
     font-size: 18px;
-  }
-
-  #dashboard p.info {
-    font-size: 16px;
-    padding: 0px 50px;
   }
 
   #dashboard .header .preview nav {

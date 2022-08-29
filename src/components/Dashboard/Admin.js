@@ -41,7 +41,7 @@ const Admin = ({ database, setDatabase }) => {
 
   return (
     <article className="admin">
-      <h3>Edit Admin Section</h3>
+      <h3>Update Admin Panel</h3>
 
       {preview === false ? (
         <form onSubmit={showPreview}>

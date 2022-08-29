@@ -41,7 +41,7 @@ const Hero = ({ database, setDatabase }) => {
 
   return (
     <article className="hero">
-      <h3>Edit Hero Section</h3>
+      <h3>Update Hero Section</h3>
 
       {preview === false ? (
         <form onSubmit={showPreview}>

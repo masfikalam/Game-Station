@@ -41,7 +41,7 @@ const Header = ({ database, setDatabase }) => {
 
   return (
     <article className="header">
-      <h3>Edit Header Section</h3>
+      <h3>Edit Page Header</h3>
 
       {preview === false ? (
         <form onSubmit={showPreview}>

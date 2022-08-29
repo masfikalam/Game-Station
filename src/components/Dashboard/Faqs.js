@@ -25,7 +25,7 @@ const Faqs = ({ database, setDatabase }) => {
 
   return (
     <article className="faqs">
-      <h3>Edit FAQs Section</h3>
+      <h3>Edit FAQs</h3>
 
       {database.faqlist.map((faq) =>
         edit === faq.id ? (

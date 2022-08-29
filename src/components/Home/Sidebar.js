@@ -1,6 +1,8 @@
 import { BiGroup } from "react-icons/bi";
+import { FiEdit } from "react-icons/fi";
 import { GiGamepad } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import "../../styles/Sidebar.css";
 
 const Sidebar = ({ groups, groupRef }) => {
@@ -24,13 +26,18 @@ const Sidebar = ({ groups, groupRef }) => {
         <li onClick={scrollGroup}>
           <BiGroup className="icon" /> Explore
         </li>
+        <Link to="dashboard">
+          <li onClick={scrollGroup}>
+            <FiEdit className="icon" /> Edit Page
+          </li>
+        </Link>
       </ul>
 
       <hr />
 
       <ul>
-        {groups.map((group, id) => (
-          <li key={id}>
+        {groups.map((group) => (
+          <li key={group.id}>
             <GiGamepad className="icon" /> {group.title}
           </li>
         ))}

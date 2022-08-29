@@ -28,63 +28,75 @@ const community = {
 
 const grouplist = [
   {
+    id: 1,
     title: "G.T.A Universe",
     thumb:
       "https://c4.wallpaperflare.com/wallpaper/845/817/216/niko-bellic-gta-4-grand-theft-auto-4-wallpaper-preview.jpg",
   },
   {
+    id: 2,
     title: "C.O.D Phantoms",
     thumb:
       "https://i.pinimg.com/736x/b0/75/8e/b0758e5bb3866073bc56b797fb1255cb.jpg",
   },
   {
+    id: 3,
     title: "The Horizon Drivers",
     thumb:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3dPZAwg-GaQKshm-hL2lBD2Tp1ZhporlnzKhw6rhRaMBYehcwnizpXiXPY6SNJZMhizs&usqp=CAU",
   },
   {
+    id: 4,
     title: "Counter Strike Squad",
     thumb:
       "https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1641233427",
   },
 
   {
+    id: 5,
     title: "Minecraft Engineers",
     thumb:
       "https://canyonechoes.org/wp-content/uploads/2022/01/YESSSSSSSSSSNO.webp",
   },
   {
+    id: 6,
     title: "Elden Ring Fellows",
     thumb:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jFqSYPUamfJ30AMLfGjVn61a35WbSmDucAXlwvv6uW-I46KQcy_muDDPHv9pGS1X4FU&usqp=CAU",
   },
   {
+    id: 7,
     title: "Among Us Crews",
     thumb:
       "https://techraptor.net/sites/default/files/styles/image_header/public/2021-07/Among%20Us%20Servers%20Down%20July%2012%202021%20cover.jpg?itok=0p5Fru7Y",
   },
 
   {
+    id: 8,
     title: "Unity Game Mods",
     thumb:
       "https://c4.wallpaperflare.com/wallpaper/66/41/250/cyberpunk-futuristic-computer-interfaces-wallpaper-preview.jpg",
   },
   {
+    id: 9,
     title: "Amazing PC Hacks",
     thumb:
       "https://thumbs.dreamstime.com/b/close-up-computer-repair-service-maintenance-cleanup-dust-dirty-checkup-electronic-devices-close-up-computer-117236155.jpg",
   },
   {
+    id: 10,
     title: "Classic Game Fans",
     thumb:
       "https://thumbs.dreamstime.com/b/old-video-game-retro-style-background-vector-illustration-eps-141029636.jpg",
   },
   {
+    id: 11,
     title: "RD Redemption Tips",
     thumb:
       "https://s1.gaming-cdn.com/images/products/5679/616x353/red-dead-redemption-2-pc-game-rockstar-cover.jpg?v=1647026658",
   },
   {
+    id: 12,
     title: "Game Cheatsheets",
     thumb:
       "https://img.itch.zone/aW1hZ2UvMjgyMjk2LzEzNzM1NzkucG5n/original/ra4tci.png",

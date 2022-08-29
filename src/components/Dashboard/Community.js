@@ -36,7 +36,7 @@ const Community = ({ database, setDatabase }) => {
 
   return (
     <article className="community">
-      <h3>Edit Community Section</h3>
+      <h3>Edit Community Goal</h3>
 
       {preview === false ? (
         <form onSubmit={showPreview}>
