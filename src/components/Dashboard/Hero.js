@@ -50,7 +50,7 @@ const Hero = ({ database, setDatabase }) => {
             rows={5}
             type="text"
             name="heroText"
-            placeholder="Hero Text"
+            placeholder="Short Description"
           ></textarea>
           <button type="submit">
             Preview <FaEye className="icon" />

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { FiEdit } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
 
 const Faqs = ({ database, setDatabase }) => {
-  const navigate = useNavigate();
   const [edit, setEdit] = useState(null);
 
   const publish = (e, id) => {
@@ -20,7 +18,6 @@ const Faqs = ({ database, setDatabase }) => {
       faqlist: [...filtered, obj],
     });
     setEdit(null);
-    navigate("/");
   };
 
   return (

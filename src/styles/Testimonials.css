@@ -49,6 +49,7 @@
 @media (max-width: 600px) {
   #testimonials h2 {
     padding-top: 0;
+    font-size: 22px;
   }
 
   #testimonials article {

@@ -41,9 +41,9 @@ const Community = ({ database, setDatabase }) => {
       {preview === false ? (
         <form onSubmit={showPreview}>
           <textarea
-            name="goal"
-            placeholder="Community Goal"
             rows={5}
+            name="goal"
+            placeholder="Community Goals & Perks"
           ></textarea>
           <button type="submit">
             Preview <FaEye className="icon" />

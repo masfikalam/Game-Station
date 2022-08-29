@@ -46,8 +46,8 @@ const Admin = ({ database, setDatabase }) => {
       {preview === false ? (
         <form onSubmit={showPreview}>
           <input type="text" name="photo" placeholder="Photo Link" />
-          <input type="text" name="username" placeholder="Admin Username" />
-          <input type="text" name="bio" placeholder="Admin Bio Text" />
+          <input type="text" name="username" placeholder="Username" />
+          <input type="text" name="bio" placeholder="About / Bio" />
           <input type="text" name="youtube" placeholder="Youtube Channel" />
           <input type="text" name="instagram" placeholder="Instagram Profile" />
           <button type="submit">

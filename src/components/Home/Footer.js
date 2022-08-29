@@ -17,16 +17,10 @@ const Footer = ({ brand }) => {
             </button>
           </Link>
           <p>
-            Powered by :{" "}
-            <a href="https://pensil.in" target="_blank">
-              Pensil
-            </a>
+            Powered by : <a href="https://pensil.in">Pensil</a>
           </p>
           <p>
-            Developed by :{" "}
-            <a href="https://masfikul-alam.web.app" target="_blank">
-              Masfik
-            </a>
+            Developed by : <a href="https://masfikul-alam.web.app">Masfik</a>
           </p>
         </article>
       </div>
