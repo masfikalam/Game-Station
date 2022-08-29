@@ -9,11 +9,10 @@ const Hero = ({ hero }) => {
       <img src={banner} alt={name} />
 
       <div>
-        <p>{heroText}</p>
-
         <button>
           <BsPersonPlusFill />
         </button>
+        <p>{heroText}</p>
       </div>
     </section>
   );
