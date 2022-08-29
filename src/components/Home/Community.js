@@ -13,14 +13,16 @@ const Community = ({ community }) => {
       <article>
         <p>{goal}</p>
 
-        <div className="perks">
-          <b>Perks -</b>
-          <ul>
-            {perks.map((perk, id) => (
-              <li key={id}>{perk}</li>
-            ))}
-          </ul>
-        </div>
+        {perks && (
+          <div className="perks">
+            <b>Perks -</b>
+            <ul>
+              {perks.map((perk, id) => (
+                <li key={id}>{perk}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </article>
     </section>
   );

@@ -6,12 +6,15 @@
 
 #dashboard article {
   text-align: left;
-  max-width: 500px;
+  max-width: 1000px;
   margin: 80px auto;
 }
 
 #dashboard form {
+  margin: auto;
   display: flex;
+  max-width: 500px;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -34,12 +37,17 @@
   text-align: center;
 }
 
+#dashboard h3 {
+  text-align: center;
+}
+
 #dashboard p {
   font-size: 20px;
 }
 
 #dashboard input,
 #dashboard textarea {
+  width: 100%;
   border: none;
   min-width: 250px;
   padding: 10px 15px;
@@ -52,12 +60,17 @@
   border-radius: 10px;
 }
 
-#dashboard .preview section {
+#dashboard .preview section,
+#dashboard .preview section article {
   margin: 0;
 }
 
+#dashboard .btns {
+  text-align: center;
+}
+
 #dashboard .btns button {
-  margin: 10px 10px 0 0;
+  margin: 15px 5px;
 }
 
 @media (max-width: 600px) {
