@@ -9,13 +9,14 @@ const Header = ({ database, setDatabase }) => {
     e.preventDefault();
     setPreview(true);
 
-    if (e.target.title.value && e.target.logo.value) {
-      setNewData({ name: e.target.title.value, logo: e.target.logo.value });
-    } else if (e.target.title.value) {
-      setNewData({ ...newData, name: e.target.title.value });
-    } else if (e.target.logo.value) {
-      setNewData({ ...newData, logo: e.target.logo.value });
-    }
+    const obj = { ...newData };
+    e.target.childNodes.forEach((inp) => {
+      if (inp.type !== "submit" && inp.value) {
+        obj[inp.name] = inp.value;
+      }
+    });
+
+    setNewData({ ...newData, ...obj });
   };
 
   const cancelPreview = () => {
@@ -41,7 +42,7 @@ const Header = ({ database, setDatabase }) => {
       {preview === false ? (
         <form onSubmit={showPreview}>
           <input type="text" name="logo" placeholder="Logo Link" />
-          <input type="text" name="title" placeholder="Community Title" />
+          <input type="text" name="name" placeholder="Community Title" />
           <button type="submit">Preview</button>
         </form>
       ) : (

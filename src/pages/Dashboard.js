@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { dbContext } from "../App";
+import Admin from "../components/Dashboard/Admin";
 import Community from "../components/Dashboard/Community";
 import Header from "../components/Dashboard/Header";
 import Hero from "../components/Dashboard/Hero";
@@ -16,6 +17,7 @@ const Dashboard = () => {
       <Header database={database} setDatabase={setDatabase} />
       <Hero database={database} setDatabase={setDatabase} />
       <Community database={database} setDatabase={setDatabase} />
+      <Admin database={database} setDatabase={setDatabase} />
     </section>
   );
 };

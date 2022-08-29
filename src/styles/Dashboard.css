@@ -65,6 +65,10 @@
   margin: 0;
 }
 
+#dashboard .preview section h2 {
+  display: none;
+}
+
 #dashboard .btns {
   text-align: center;
 }
