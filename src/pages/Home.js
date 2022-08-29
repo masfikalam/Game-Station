@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { dbContext } from "../App";
 import Admin from "../components/Home/Admin";
 import Community from "../components/Home/Community";
@@ -15,6 +15,10 @@ const Home = () => {
   const [database] = useContext(dbContext);
   const { admin, brand, hero, community, faqlist, grouplist, testList } =
     database;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

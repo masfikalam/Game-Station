@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { FaEye } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import PreHeader from "../Home/Header";
 
 const Header = ({ database, setDatabase }) => {
+  const navigate = useNavigate();
   const [preview, setPreview] = useState(false);
   const [newData, setNewData] = useState(database.brand);
 
@@ -34,6 +36,7 @@ const Header = ({ database, setDatabase }) => {
     });
 
     setPreview(false);
+    navigate("/");
   };
 
   return (

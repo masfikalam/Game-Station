@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { FaEye } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import PreCommunity from "../Home/Community";
 
 const Community = ({ database, setDatabase }) => {
+  const navigate = useNavigate();
   const [preview, setPreview] = useState(false);
   const [newData, setNewData] = useState(database.community);
 
@@ -29,6 +31,7 @@ const Community = ({ database, setDatabase }) => {
     });
 
     setPreview(false);
+    navigate("/");
   };
 
   return (
