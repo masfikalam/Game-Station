@@ -22,13 +22,29 @@ footer article {
   text-align: left;
 }
 
-footer h3 {
-  font-size: 22px;
-  margin: 0;
+footer button {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #fdf000;
 }
 
+footer button:active {
+  transform: scale(0.95);
+}
+
+footer .icon {
+  margin: 0 0 -2px 3px;
+}
 footer p {
   margin: 10px 0;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
 }
 
 footer a {
@@ -44,5 +60,9 @@ footer a {
 
   footer article {
     text-align: center;
+  }
+
+  footer button {
+    font-size: 14px;
   }
 }

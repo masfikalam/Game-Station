@@ -1,14 +1,18 @@
-import logo from "../resources/logo.png";
+import { FiEdit } from "react-icons/fi";
 import "../styles/Footer.css";
 
-const Footer = () => {
+const Footer = ({ brand }) => {
+  const { logo, name } = brand;
+
   return (
     <footer>
       <div>
         <img src={logo} alt="Game Station" />
 
         <article>
-          <h3>Game Station</h3>
+          <button>
+            Edit Page <FiEdit className="icon" />
+          </button>
           <p>
             Powered by :{" "}
             <a href="https://pensil.in" target="_blank">
@@ -23,7 +27,10 @@ const Footer = () => {
           </p>
         </article>
       </div>
-      <small>Game Station &copy; {new Date().getFullYear()}</small>
+
+      <small>
+        {name} &copy; {new Date().getFullYear()}
+      </small>
     </footer>
   );
 };

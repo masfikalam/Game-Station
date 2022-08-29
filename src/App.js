@@ -8,25 +8,32 @@ import Groups from "./components/Groups";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
-import { faqlist, grouplist, testList } from "./database";
+import {
+  admin,
+  brand,
+  community,
+  faqlist,
+  grouplist,
+  testList,
+} from "./database";
 
 function App() {
   const groupRef = useRef(null);
 
   return (
     <>
-      <Header />
+      <Header brand={brand} />
 
       <Container groups={grouplist} groupRef={groupRef}>
-        <Hero />
-        <Community />
+        <Hero hero={brand} />
+        <Community community={community} />
         <Groups grouplist={grouplist} groupRef={groupRef} />
-        <Admin />
+        <Admin admin={admin} />
         <Testimonials testList={testList} />
         <Faqs faqlist={faqlist} />
       </Container>
 
-      <Footer />
+      <Footer brand={brand} />
     </>
   );
 }

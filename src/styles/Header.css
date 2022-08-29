@@ -35,20 +35,16 @@ header button {
   border: none;
   font-size: 16px;
   cursor: pointer;
-  font-weight: bold;
   padding: 8px 15px;
   border-radius: 10px;
   background-color: #fdf000;
 }
 
-header .settings {
-  font-size: 30px;
-  cursor: pointer;
-  margin-left: 20px;
+header .icon {
+  margin: 0 0 -3px 3px;
 }
 
-header button:active,
-header .settings:active {
+header button:active {
   transform: scale(0.95);
 }
 
@@ -67,12 +63,7 @@ header .settings:active {
   }
 
   header button {
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 10px;
-  }
-
-  header .settings {
-    font-size: 28px;
-    margin-left: 15px;
   }
 }

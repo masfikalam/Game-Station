@@ -1,3 +1,28 @@
+import banner from "./resources/banner.png";
+import logo from "./resources/logo.png";
+import adminPhoto from "./resources/pewdiepie.png";
+
+const brand = {
+  name: "Game Station",
+  logo,
+  banner,
+  heroText:
+    "A computer game, in this context, will mean something that one uses primarily as for a hobby, a diversion from real life, and is a medium through which one plays. The primary reason to have a community centered on games is so that its' members playing experience is enriched.",
+};
+
+const community = {
+  goal: "How does anybody find friends? In the traditional community, we search through our pool of neighbours and professional colleagues, in order to find people who share our values and interests. We exchange information about one another, disclose and discuss our mutual interests. In a virtual community we can go directly to the place where are favourite subjects are being discussed, then get acquainted with people who share our passions or who use words in a way we find attractive. Your chances of making friends are magnified by orders of magnitude over the old methods of finding a peer group.",
+  perks: [
+    "Make friends virtually",
+    "Find game servers to join",
+    "Share your gameplay video",
+    "Get tips on critical missions",
+    "Get crazy game modifications",
+    "Join your favorite game groups",
+    "Realtime collaboration with fellow gamers",
+  ],
+};
+
 const grouplist = [
   {
     title: "G.T.A Universe",
@@ -33,7 +58,7 @@ const grouplist = [
   {
     title: "Among Us Crews",
     thumb:
-      "https://play-lh.googleusercontent.com/qKzgm73G-tYutABAFdP9Eiwu1Fw0mfVMHNsi0cI5Q6kSK0aRFI99J_mODQsVQ-8QznI",
+      "https://techraptor.net/sites/default/files/styles/image_header/public/2021-07/Among%20Us%20Servers%20Down%20July%2012%202021%20cover.jpg?itok=0p5Fru7Y",
   },
 
   {
@@ -62,6 +87,14 @@ const grouplist = [
       "https://img.itch.zone/aW1hZ2UvMjgyMjk2LzEzNzM1NzkucG5n/original/ra4tci.png",
   },
 ];
+
+const admin = {
+  photo: adminPhoto,
+  username: "Pewdiepie",
+  bio: "Admin | Gamer | Streamer",
+  youtube: "https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw",
+  instagram: "https://www.instagram.com/pewdiepie/",
+};
 
 const testList = [
   {
@@ -94,12 +127,12 @@ const faqlist = [
   {
     question: "What is Game Station?",
     answer:
-      "Game Station is a platform that connects gamers, allowing them to play their favorite games with partners worldwide. We are redefining the gaming community experience, providing gamers and newcomers alike a safe and place to interact",
+      "Game Station is a platform that connects gamers, allowing them to play their favorite games with partners worldwide. We are redefining the gaming community experience, providing gamers and newcomers alike a safe place to interact.",
   },
   {
     question: "How do I sign up here?",
     answer:
-      "Signing up to Game Station is easy and free! Just click login on the top of the page or download our APP from PlayStore",
+      "Signing up to Game Station is easy and free! Just click login on the top of the page or download our app from Play Store.",
   },
   {
     question: "Can I have more than one account?",
@@ -109,8 +142,8 @@ const faqlist = [
   {
     question: "What are the community guidelines?",
     answer:
-      "https://www.facebook.com/fbgaminghome/creators/gaming-community-guidelines",
+      "Please read - https://www.facebook.com/fbgaminghome/creators/gaming-community-guidelines",
   },
 ];
 
-export { grouplist, faqlist, testList };
+export { brand, community, grouplist, admin, faqlist, testList };

@@ -1,20 +1,20 @@
-import { MdSettings } from "react-icons/md";
-import logo from "../resources/logo.png";
+import { MdLogin } from "react-icons/md";
 import "../styles/Header.css";
 
-const Header = () => {
+const Header = ({ brand }) => {
+  const { name, logo } = brand;
+
   return (
     <header>
       <nav>
         <div>
-          <img src={logo} alt="gamestation" />
-          <h1>Game Station</h1>
+          <img src={logo} alt={name} />
+          <h1>{name}</h1>
         </div>
 
-        <div>
-          <button>Login</button>
-          <MdSettings className="settings" />
-        </div>
+        <button>
+          Login <MdLogin className="icon" />
+        </button>
       </nav>
     </header>
   );

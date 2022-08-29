@@ -1,20 +1,15 @@
 import { BsPersonPlusFill } from "react-icons/bs";
-import banner from "../resources/banner.png";
 import "../styles/Hero.css";
 
-const Hero = () => {
+const Hero = ({ hero }) => {
+  const { name, banner, heroText } = hero;
+
   return (
     <section id="hero">
-      <img src={banner} alt="gamestation banner" />
+      <img src={banner} alt={name} />
 
       <div>
-        <p>
-          A computer game, in this context, will mean something that one uses
-          primarily as for a hobby, a diversion from real life, and is a medium
-          through which one plays. The primary reason to have a community
-          centered on games is so that its' members playing experience is
-          enriched.
-        </p>
+        <p>{heroText}</p>
 
         <button>
           <BsPersonPlusFill />
