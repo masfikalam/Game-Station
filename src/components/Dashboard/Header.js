@@ -30,10 +30,12 @@ const Header = ({ database, setDatabase }) => {
         ...newData,
       },
     });
+
+    setPreview(false);
   };
 
   return (
-    <div className="header">
+    <article className="header">
       <h3>Edit Header Section</h3>
 
       {preview === false ? (
@@ -43,14 +45,15 @@ const Header = ({ database, setDatabase }) => {
           <button type="submit">Preview</button>
         </form>
       ) : (
-        <article className="preview">
+        <div className="preview">
           <PreHeader brand={newData} />
-          <br />
-          <button onClick={cancelPreview}>Cancel</button>
-          <button onClick={publish}>Publish</button>
-        </article>
+          <div className="btns">
+            <button onClick={cancelPreview}>Cancel</button>
+            <button onClick={publish}>Publish</button>
+          </div>
+        </div>
       )}
-    </div>
+    </article>
   );
 };
 

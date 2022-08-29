@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { dbContext } from "../App";
 import Header from "../components/Dashboard/Header";
+import Hero from "../components/Dashboard/Hero";
 import "../styles/Dashboard.css";
 
 const Dashboard = () => {
@@ -12,6 +13,7 @@ const Dashboard = () => {
       <p>Edit the community landing page template from here</p>
 
       <Header database={database} setDatabase={setDatabase} />
+      <Hero database={database} setDatabase={setDatabase} />
     </section>
   );
 };

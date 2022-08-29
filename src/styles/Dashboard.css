@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-#dashboard div {
+#dashboard article {
   text-align: left;
   max-width: 500px;
   margin: 80px auto;
@@ -38,7 +38,8 @@
   font-size: 20px;
 }
 
-#dashboard input {
+#dashboard input,
+#dashboard textarea {
   border: none;
   min-width: 250px;
   padding: 10px 15px;
@@ -46,8 +47,17 @@
   margin-bottom: 10px;
 }
 
-#dashboard .preview button {
-  margin-right: 10px;
+#dashboard .header header {
+  position: static;
+  border-radius: 10px;
+}
+
+#dashboard .preview section {
+  margin: 0;
+}
+
+#dashboard .btns button {
+  margin: 10px 10px 0 0;
 }
 
 @media (max-width: 600px) {
