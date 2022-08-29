@@ -1,7 +1,21 @@
 #dashboard {
-  margin: 50px;
+  margin: 0;
   color: white;
   text-align: center;
+}
+
+#dashboard #nav {
+  padding: 5px 30px;
+  background-color: #010508;
+  box-shadow: 0 5px 5px #0000005b;
+}
+
+#dashboard #nav div {
+  margin: auto;
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #dashboard article {
@@ -32,9 +46,12 @@
 }
 
 #dashboard h2 {
-  font-size: 28px;
-  color: #fdf000;
+  font-size: 26px;
   text-align: center;
+}
+
+#dashboard h2 .down {
+  margin: 0 4px -4px 0;
 }
 
 #dashboard h3 {
@@ -42,7 +59,14 @@
 }
 
 #dashboard p {
+  color: #fdf000;
   font-size: 20px;
+  margin-top: 50px;
+}
+
+#dashboard .icon {
+  font-size: 18px;
+  margin: 0 2px -4px 2px;
 }
 
 #dashboard input,
@@ -78,12 +102,21 @@
 }
 
 @media (max-width: 600px) {
-  #dashboard {
-    margin: 50px 30px;
+  #dashboard #nav {
+    padding: 5px 20px;
+  }
+
+  #dashboard article {
+    margin: 50px;
+  }
+
+  #dashboard button {
+    font-size: 14px;
+    padding: 6px 8px;
   }
 
   #dashboard h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   #dashboard p {

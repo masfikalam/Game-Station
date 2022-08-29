@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaEye } from "react-icons/fa";
 import PreAdmin from "../Home/Admin";
 
 const Admin = ({ database, setDatabase }) => {
@@ -46,7 +47,9 @@ const Admin = ({ database, setDatabase }) => {
           <input type="text" name="bio" placeholder="Admin Bio Text" />
           <input type="text" name="youtube" placeholder="Youtube Channel" />
           <input type="text" name="instagram" placeholder="Instagram Profile" />
-          <button type="submit">Preview</button>
+          <button type="submit">
+            Preview <FaEye className="icon" />
+          </button>
         </form>
       ) : (
         <div className="preview">

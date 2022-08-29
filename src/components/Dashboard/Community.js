@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaEye } from "react-icons/fa";
 import PreCommunity from "../Home/Community";
 
 const Community = ({ database, setDatabase }) => {
@@ -41,7 +42,9 @@ const Community = ({ database, setDatabase }) => {
             placeholder="Community Goal"
             rows={5}
           ></textarea>
-          <button type="submit">Preview</button>
+          <button type="submit">
+            Preview <FaEye className="icon" />
+          </button>
         </form>
       ) : (
         <div className="preview">

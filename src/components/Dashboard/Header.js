@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaEye } from "react-icons/fa";
 import PreHeader from "../Home/Header";
 
 const Header = ({ database, setDatabase }) => {
@@ -43,7 +44,9 @@ const Header = ({ database, setDatabase }) => {
         <form onSubmit={showPreview}>
           <input type="text" name="logo" placeholder="Logo Link" />
           <input type="text" name="name" placeholder="Community Title" />
-          <button type="submit">Preview</button>
+          <button type="submit">
+            Preview <FaEye className="icon" />
+          </button>
         </form>
       ) : (
         <div className="preview">

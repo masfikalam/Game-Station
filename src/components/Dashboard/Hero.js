@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaEye } from "react-icons/fa";
 import PreHero from "../Home/Hero";
 
 const Hero = ({ database, setDatabase }) => {
@@ -48,7 +49,9 @@ const Hero = ({ database, setDatabase }) => {
             name="heroText"
             placeholder="Hero Text"
           ></textarea>
-          <button type="submit">Preview</button>
+          <button type="submit">
+            Preview <FaEye className="icon" />
+          </button>
         </form>
       ) : (
         <div className="preview">
