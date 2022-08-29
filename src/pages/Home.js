@@ -13,7 +13,7 @@ import Testimonials from "../components/Home/Testimonials";
 const Home = () => {
   const groupRef = useRef(null);
   const [database] = useContext(dbContext);
-  const { admin, brand, hero, community, faqlist, grouplist, testList } =
+  const { admin, brand, hero, community, faqlist, grouplist, testlist } =
     database;
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Home = () => {
         <Community community={community} />
         <Groups grouplist={grouplist} groupRef={groupRef} />
         <Admin admin={admin} />
-        <Testimonials testList={testList} />
+        <Testimonials testlist={testlist} />
         <Faqs faqlist={faqlist} />
       </Container>
 

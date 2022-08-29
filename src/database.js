@@ -99,7 +99,7 @@ const admin = {
   instagram: "https://www.instagram.com/pewdiepie/",
 };
 
-const testList = [
+const testlist = [
   {
     username: "DragonSlayer04",
     text: "Best community ever!",
@@ -153,4 +153,4 @@ const faqlist = [
   },
 ];
 
-export { brand, hero, community, grouplist, admin, faqlist, testList };
+export { brand, hero, community, grouplist, admin, faqlist, testlist };

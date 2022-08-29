@@ -1,7 +1,7 @@
 import { RiQuestionAnswerFill } from "react-icons/ri";
 import "../../styles/Testimonials.css";
 
-const Testimonials = ({ testList }) => {
+const Testimonials = ({ testlist }) => {
   return (
     <section id="testimonials">
       <h2>
@@ -9,7 +9,7 @@ const Testimonials = ({ testList }) => {
       </h2>
 
       <div className="test-boxes">
-        {testList.map((test) => (
+        {testlist.map((test) => (
           <article key={test.username}>
             <div className="test">
               <img src={test.photo} alt={test.username} />

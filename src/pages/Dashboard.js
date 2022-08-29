@@ -8,6 +8,7 @@ import Community from "../components/Dashboard/Community";
 import Faqs from "../components/Dashboard/Faqs";
 import Header from "../components/Dashboard/Header";
 import Hero from "../components/Dashboard/Hero";
+import Testimonials from "../components/Dashboard/Testimonials";
 import "../styles/Dashboard.css";
 
 const Dashboard = () => {
@@ -38,6 +39,7 @@ const Dashboard = () => {
       <Hero database={database} setDatabase={setDatabase} />
       <Community database={database} setDatabase={setDatabase} />
       <Admin database={database} setDatabase={setDatabase} />
+      <Testimonials database={database} setDatabase={setDatabase} />
       <Faqs database={database} setDatabase={setDatabase} />
     </section>
   );
