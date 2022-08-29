@@ -31,7 +31,7 @@ const Dashboard = () => {
         </div>
       </nav>
 
-      <p>Edit the community landing page</p>
+      <p className="info">Edit the community landing page</p>
 
       <Header database={database} setDatabase={setDatabase} />
       <Hero database={database} setDatabase={setDatabase} />

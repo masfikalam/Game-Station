@@ -18,7 +18,14 @@
   justify-content: space-between;
 }
 
-#dashboard article {
+#dashboard article.header,
+#dashboard article.hero,
+#dashboard article.groups,
+#dashboard article.community,
+#dashboard article.admin,
+#dashboard article.tests,
+#dashboard article.faqs {
+  padding: 0 50px;
   text-align: left;
   max-width: 1000px;
   margin: 80px auto;
@@ -58,7 +65,7 @@
   text-align: center;
 }
 
-#dashboard p {
+#dashboard p.info {
   color: #fdf000;
   font-size: 20px;
   margin-top: 50px;
@@ -119,12 +126,12 @@
     font-size: 18px;
   }
 
-  #dashboard p {
+  #dashboard p.info {
     font-size: 16px;
     padding: 0px 50px;
   }
 
-  #dashboard div {
-    margin: 40px auto;
+  #dashboard .header .preview nav {
+    padding: 5px;
   }
 }
