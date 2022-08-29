@@ -35,6 +35,7 @@ const Header = ({ database, setDatabase }) => {
       },
     });
 
+    document.title = newData.name;
     setPreview(false);
     navigate("/");
   };
