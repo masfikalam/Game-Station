@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
 const Groups = ({ database, setDatabase }) => {
-  const navigate = useNavigate();
   const [add, setAdd] = useState(false);
 
   const addGroup = (e) => {
@@ -20,7 +18,6 @@ const Groups = ({ database, setDatabase }) => {
       grouplist: [...database.grouplist, obj],
     });
     setAdd(false);
-    navigate("/");
   };
 
   const deltGroup = (id) => {
