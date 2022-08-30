@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Testimonials = ({ database, setDatabase }) => {
   const navigate = useNavigate();
 
+  // publish testimonial
   const publish = (e) => {
     e.preventDefault();
 

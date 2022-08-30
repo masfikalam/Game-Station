@@ -4,6 +4,7 @@ import { FaTrashAlt } from "react-icons/fa";
 const Groups = ({ database, setDatabase }) => {
   const [add, setAdd] = useState(false);
 
+  // add new group
   const addGroup = (e) => {
     e.preventDefault();
 
@@ -20,6 +21,7 @@ const Groups = ({ database, setDatabase }) => {
     setAdd(false);
   };
 
+  // delete group
   const deltGroup = (id) => {
     const filtered = database.grouplist.filter((group) => group.id !== id);
     setDatabase({ ...database, grouplist: filtered });

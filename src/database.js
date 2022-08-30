@@ -2,6 +2,9 @@ import banner from "./resources/banner.png";
 import logo from "./resources/logo.png";
 import adminPhoto from "./resources/pewdiepie.png";
 
+// This file simulates a local database
+// All the data used in the landing page comes from this single file
+
 const brand = {
   name: "Game Station",
   logo,

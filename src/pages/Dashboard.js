@@ -1,10 +1,8 @@
 import React, { useContext, useEffect } from "react";
-import { FiEdit } from "react-icons/fi";
-import { TiArrowBack } from "react-icons/ti";
-import { Link } from "react-router-dom";
 import { dbContext } from "../App";
 import Admin from "../components/Dashboard/Admin";
 import Community from "../components/Dashboard/Community";
+import DashNav from "../components/Dashboard/DashNav";
 import Faqs from "../components/Dashboard/Faqs";
 import Groups from "../components/Dashboard/Groups";
 import Header from "../components/Dashboard/Header";
@@ -21,19 +19,7 @@ const Dashboard = () => {
 
   return (
     <section id="dashboard">
-      <nav id="nav">
-        <div>
-          <h2>
-            <FiEdit className="down" /> Template Dashboard
-          </h2>
-          <Link to="/">
-            <button>
-              <TiArrowBack className="icon" /> Back
-            </button>
-          </Link>
-        </div>
-      </nav>
-
+      <DashNav />
       <Header database={database} setDatabase={setDatabase} />
       <Hero database={database} setDatabase={setDatabase} />
       <Community database={database} setDatabase={setDatabase} />

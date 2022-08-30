@@ -1,6 +1,6 @@
 # Game Station
 
-A pensil community landing page template (developed for Pensil Community Hackathon)
+A community landing page template (developed for Pensil Community Hackathon)
 
 - The actual landing page has multiple sections (header, hero, community, groups, admin, testimonials, FAQs, footer)
 - Template can be fully edited from the dashboard page (click Edit Page button from the sidebar or from the footer section)

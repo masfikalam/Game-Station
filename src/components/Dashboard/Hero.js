@@ -8,6 +8,7 @@ const Hero = ({ database, setDatabase }) => {
   const [preview, setPreview] = useState(false);
   const [newData, setNewData] = useState(database.hero);
 
+  // open preview mode
   const showPreview = (e) => {
     e.preventDefault();
     setPreview(true);
@@ -22,11 +23,13 @@ const Hero = ({ database, setDatabase }) => {
     setNewData({ ...newData, ...obj });
   };
 
+  // close preview mode
   const cancelPreview = () => {
     setPreview(false);
     setNewData(database.hero);
   };
 
+  // publish changes
   const publish = () => {
     setDatabase({
       ...database,

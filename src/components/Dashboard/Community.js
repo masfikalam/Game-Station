@@ -8,6 +8,7 @@ const Community = ({ database, setDatabase }) => {
   const [preview, setPreview] = useState(false);
   const [newData, setNewData] = useState(database.community);
 
+  // open preview mode
   const showPreview = (e) => {
     e.preventDefault();
     setPreview(true);
@@ -17,11 +18,13 @@ const Community = ({ database, setDatabase }) => {
     }
   };
 
+  // close preview mode
   const cancelPreview = () => {
     setPreview(false);
     setNewData(database.community);
   };
 
+  // publish changes
   const publish = () => {
     setDatabase({
       ...database,

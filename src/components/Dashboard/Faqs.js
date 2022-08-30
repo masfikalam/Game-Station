@@ -4,6 +4,7 @@ import { FiEdit } from "react-icons/fi";
 const Faqs = ({ database, setDatabase }) => {
   const [edit, setEdit] = useState(null);
 
+  // publish changes
   const publish = (e, id) => {
     e.preventDefault();
 

@@ -8,6 +8,7 @@ const Admin = ({ database, setDatabase }) => {
   const [preview, setPreview] = useState(false);
   const [newData, setNewData] = useState(database.admin);
 
+  // open preview mode
   const showPreview = (e) => {
     e.preventDefault();
     setPreview(true);
@@ -22,11 +23,13 @@ const Admin = ({ database, setDatabase }) => {
     setNewData({ ...newData, ...obj });
   };
 
+  // close preview mode
   const cancelPreview = () => {
     setPreview(false);
     setNewData(database.admin);
   };
 
+  // publish changes
   const publish = () => {
     setDatabase({
       ...database,

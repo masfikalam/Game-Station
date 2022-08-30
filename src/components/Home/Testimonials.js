@@ -1,3 +1,4 @@
+import { FaQuoteLeft } from "react-icons/fa";
 import { RiQuestionAnswerFill } from "react-icons/ri";
 import "../../styles/Testimonials.css";
 
@@ -13,10 +14,11 @@ const Testimonials = ({ testlist }) => {
           <article key={test.username}>
             <div className="test">
               <img src={test.photo} alt={test.username} />
-
               <div>
-                <h4>@{test.username}</h4>
-                <p>{test.text}</p>
+                <p>
+                  <FaQuoteLeft className="quote" /> {test.text}
+                </p>
+                <small>@{test.username}</small>
               </div>
             </div>
           </article>
